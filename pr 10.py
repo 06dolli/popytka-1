@@ -24,7 +24,7 @@ def kr(matrix, k):
 count, maxx=kr(a, k)
 print("Текущая матрица: ", a, 'число элементов кратных', k, ':', count, 'Максимальное число:', maxx)
 
-fv = open('vivod.txt', 'w')
-fv.write(str(count)+ '\n')
-fv.write(str(maxx))
+fv = open('vivod.txt', 'w')#перезапись данных
+fv.write('число элементов кратных: ' + str(count)+ '\n')
+fv.write('Максимальное число:' + str(maxx))
 fv.close()
